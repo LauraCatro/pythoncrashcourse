@@ -19,4 +19,3 @@ places.sort()
 print(f"List in alphabetical order: {places}")
 places.sort(reverse=True)
 print(f"List in reversalphabetical order: {places}")
-

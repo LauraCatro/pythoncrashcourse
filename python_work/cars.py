@@ -1,7 +1,7 @@
 cars = ['bmw', 'audi', 'toyota', 'subaru']
 cars.sort()
 print(cars)
-#Reverse alphabetical
+# Reverse alphabetical
 cars.sort(reverse=True)
 print(cars)
 
@@ -15,8 +15,6 @@ print(sorted(cars))
 print("\nHere is the soriginal list again: ")
 print(cars)
 
-#Printing a list in reverse order
+# Printing a list in reverse order
 cars.reverse()
 print(cars)
-
-

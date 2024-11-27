@@ -5,4 +5,3 @@ message = f"Hello, {full_name.title()}!"
 print(full_name)
 print(f"Hello, {full_name.title()}!")
 print(message)
-
