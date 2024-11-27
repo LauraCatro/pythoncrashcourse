@@ -18,3 +18,10 @@ print(cars)
 # Printing a list in reverse order
 cars.reverse()
 print(cars)
+
+#If statement
+for car in cars:
+    if car == 'bmw':
+        print(car.upper())
+    else:
+        print(car.title())
