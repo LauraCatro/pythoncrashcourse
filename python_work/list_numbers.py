@@ -8,7 +8,7 @@ print(min(numbers))
 print(max(numbers))
 print(sum(numbers))
 
-odd_numbers = [value for value in range(1, 21, 2)]
+odd_numbers = [value for value in range(1, 20, 2)]
 print(odd_numbers)
 
 threes = [value for value in range(3, 31, 3)]
