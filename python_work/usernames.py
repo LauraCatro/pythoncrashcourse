@@ -1,8 +1,8 @@
 current_users = ['estrella','angela','berry','lucas','dany']
-new_users = ['estrella','Fredy','Lucas','dany','Diana']
+new_users = ['Estrella','Fredy','Lucas','Dany','Diana']
 
 for user in new_users:
-    if user != current_users:
-        print(f"The user name is available, hi {user}")
+    if user.lower() in current_users:
+        print("Este nombre no esta disponible")
     else:
-        print("Enter a new user name")
+        print(f"Este nombre esta disponible {user}")
