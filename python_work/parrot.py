@@ -1,10 +1,11 @@
 prompt = "\nTell me something, and i will repeat it back to you: "
 prompt += "\nEnter 'quit' to end the program. "
 
-message = ""
-while message != 'quit':
+active = True
+while active:
     message = input(prompt)
-    print(message)
 
-    if message != 'quit':
-       print(message)
+    if message == 'quit':
+        active = False
+    else:
+        print(message)

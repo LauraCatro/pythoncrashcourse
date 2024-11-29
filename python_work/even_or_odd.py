@@ -3,6 +3,5 @@ number = int(number)
 
 if number % 10 == 0:
     print(f"\nThe number {number} is even")
-else: 
+else:
     print(f"\nThe number {number} is odd")
-
