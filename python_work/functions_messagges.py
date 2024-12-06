@@ -14,8 +14,8 @@ sent_messages = []
 
 
 send_messages(short_messages[:], sent_messages)
+show_messages(short_messages)
 show_messages(sent_messages)
-
 
 
 # print(short_messages)

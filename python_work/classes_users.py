@@ -27,6 +27,25 @@ class User:
         print(f"Number users: {self.login_attempts}")
 
 
+class Privileges:
+    def __init__(self,
+                privileges=['can add a post', 'can delete post', 'can ban user']):
+        self.privileges = privileges
+
+    def show_privileges(self):
+        print("The administratator can perform the following actions ")
+        for privilege in self.privileges:
+            print(f"-{privilege}")
+
+
+class Admin(User):
+
+    def __init__(self, first_name, last_name,
+                 age, nacionality):
+        super().__init__(first_name, last_name, age, nacionality)
+        self.privileges = Privileges()
+
+
 user = User('Diana', 'Laura', 20, 'Mexicana')
 # user_1 = User('Angeles', 'Marquez', 69, 'Mexicana')
 # user_2 = User('Antonio', 'Herrera', 24, 'Mexicano')
@@ -36,11 +55,11 @@ print(f"{user.login_attempts}")
 
 # Increment login attempts
 user.increment_login_attempts()
-user.increment_login_attempts()
-user.increment_login_attempts()
-user.increment_login_attempts()
-user.increment_login_attempts()
-user.read_number_login_attempts()
+# user.increment_login_attempts()
+# user.increment_login_attempts()
+# user.increment_login_attempts()
+# user.increment_login_attempts()
+# user.read_number_login_attempts()
 
 # Reset Login attempts
 user.reset_login_attempts()
@@ -51,3 +70,7 @@ user.read_number_login_attempts()
 
 # user_2.describe_user()
 # user_2.greet_user()
+
+admin = Admin('Carlos', 'Castro', 18, 'Mexicano')
+admin.describe_user()
+admin.privileges.show_privileges()

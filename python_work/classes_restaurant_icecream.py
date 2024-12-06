@@ -9,7 +9,6 @@ class Restaurant:
         print(f"The name of the restaurant is: {self.restaurant_name} ")
         print(f"The type of cuisine is: {self.cuisine_type}")
 
-    
     def open_restaurant(self):
         print(f"The restaurant '{self.restaurant_name}' is open!")
 
@@ -27,7 +26,7 @@ class IceCreamStand(Restaurant):
 
     def __init__(self, restaurant_name, cuisine_type, flavors=['Strawberry', 'Lemon', 'Chocolate']):
         super().__init__(restaurant_name, cuisine_type)
-        self.flavors = flavors 
+        self.flavors = flavors
 
     def decribe_flavors(self):
         print("Ice cream flavors: ")
