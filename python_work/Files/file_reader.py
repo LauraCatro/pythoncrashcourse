@@ -1,8 +1,12 @@
 from pathlib import Path
 
-path = Path('python_work/pi_digits.txt')
+path = Path('python_work/Files/pi_digits.txt')
 contents = path.read_text()
 
-lines = contents.splitlines()
-for line in lines:
+for line in contents.splitlines():
     print(line)
+
+# lines = contents.splitlines()
+
+# for line in lines:
+#     print(line)
