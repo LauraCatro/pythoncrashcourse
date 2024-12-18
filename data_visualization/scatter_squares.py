@@ -24,4 +24,7 @@ ax.ticklabel_format(style='plain')
 # Set size of tick labels.
 ax.tick_params(labelsize=14)
 
-plt.show()
+# plt.show()
+
+# Saving your Plots Automatically
+plt.savefig("squares_plot.png", bbox_inches='tight')
