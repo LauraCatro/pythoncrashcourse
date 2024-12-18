@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-x_values = range(1,6)
+x_values = range(1,5_001)
 y_values = [x**3 for x in x_values]
 
 plt.style.use('seaborn-v0_8')
@@ -17,11 +17,11 @@ ax.set_title("Square Numbers", fontsize=24)
 ax.set_xlabel("Value", fontsize=14)
 ax.set_ylabel("Square of value", fontsize=14)
 
-ax.axis([0, 6, 0, 130])
-ax.ticklabel_format(style='plain')
+# ax.axis([0, 5_100, 0, 5_500_000])
+# ax.ticklabel_format(style='plain')
 
 # Set size of tick labels.
-ax.tick_params(labelsize=14)
+ax.tick_params(labelsize=10)
 
 plt.show()
 
