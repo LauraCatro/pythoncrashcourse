@@ -1,3 +1,4 @@
+import plotly.express as px
 from dice import Dice
 
 # Create a D6
@@ -16,4 +17,6 @@ for value in poss_results:
     frequency = results.count(value)
     frequencies.append(frequency)
 
-print(frequencies)
+# Visualize the results.
+fig = px.bar(x=poss_results, y=frequencies)
+fig.show()
