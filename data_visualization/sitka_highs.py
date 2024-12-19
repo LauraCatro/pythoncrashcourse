@@ -11,6 +11,10 @@ lines = path.read_text(encoding='utf-8').splitlines()
 reader = csv.reader(lines)
 header_row = next(reader)
 
+# Printing the Headers and Their Positions.
+for index, column_reader in enumerate(header_row):
+    print(index, column_reader)
+
 # Extract dates and high temperatures.
 dates, highs = [], []
 for row in reader:
@@ -33,6 +37,3 @@ ax.tick_params(labelsize=16)
 
 plt.show()
 
-# Printing the Headers and Their Positions.
-# for index, column_reader in enumerate(header_row):
-#    print(index, column_reader)
