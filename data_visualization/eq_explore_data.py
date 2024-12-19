@@ -22,8 +22,8 @@ for eq_dict in all_eq_dicts:
     lats.append(lat)
     eq_titles.append(eq_title)
 
-titile = 'Global Earthquakes'
-fig = px.scatter_geo(lat=lats, lon=lons, size=mags, title=titile,
+title = 'Global Earthquakes'
+fig = px.scatter_geo(lat=lats, lon=lons, size=mags, title=title,
                      color = mags,
                      color_continuous_scale='electric',
                      labels={'color': 'Magnitude'},
