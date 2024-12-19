@@ -40,6 +40,7 @@ ax.set_title('Daily High and Low Temperatures, 2021\nDeath Valley, CA', fontsize
 ax.set_xlabel('', fontsize=16)
 fig.autofmt_xdate()
 ax.set_ylabel('Temperature (F)', fontsize=16)
+ax.axis([min(dates),max(dates), 0, 130])
 ax.tick_params(labelsize=16)
 
 plt.show()

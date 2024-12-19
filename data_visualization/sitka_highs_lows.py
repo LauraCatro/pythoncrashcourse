@@ -32,8 +32,12 @@ ax.fill_between(dates, highs, lows, facecolor='blue', alpha=0.1)
 ax.set_title('Daily High and Low Temperatures, 2021', fontsize=24)
 ax.set_xlabel('', fontsize=16)
 fig.autofmt_xdate()
-ax.set_ylabel('Temperature (F)', fontsize=16)
+ax.set_ylabel('Temperature (F)', fontsize=16, )
 ax.tick_params(labelsize=16)
+
+# Set the range for each axis.
+ax.axis([min(dates),max(dates), 0, 130])
+plt.xticks(rotation=90)
 
 plt.show()
 
