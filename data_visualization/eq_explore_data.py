@@ -23,7 +23,7 @@ for eq_dict in all_eq_dicts:
 titile = 'Global Earthquakes'
 fig = px.scatter_geo(lat=lats, lon=lons, size=mags, title=titile,
                      color = mags,
-                     color_continuous_scale='Viridis',
+                     color_continuous_scale='electric',
                      labels={'color': 'Magnitude'},
                      projection='natural earth',)
 fig.show()
